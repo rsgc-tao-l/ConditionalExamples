@@ -7,5 +7,6 @@
         <page name='Multiple Branches'/>
         <page name='Checking Multiple Conditions'/>
         <page name='Comparing Values'/>
+        <page name='Example'/>
     </pages>
 </playground>
