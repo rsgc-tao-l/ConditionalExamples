@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos' display-mode='rendered' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Introduction'/>
+        <page name='Simple Conditional'/>
+        <page name='If-Else Conditional'/>
+        <page name='Multiple Branches'/>
+        <page name='Checking Multiple Conditions'/>
+        <page name='Comparing Values'/>
+    </pages>
+</playground>
