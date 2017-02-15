@@ -19,8 +19,8 @@ import PlaygroundSupport
 
  */
 
-let a = Int(arc4random_uniform(10))
-let b = Int(arc4random_uniform(10))
+let a = Int(arc4random_uniform(100))
+let b = Int(arc4random_uniform(0))
 
 // What did we get?
 print("a is: \(a)")

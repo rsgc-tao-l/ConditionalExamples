@@ -32,17 +32,20 @@ import PlaygroundSupport
  Try running the program several times to see how a conditional statement and random number generation is used to produce interesting output.
  */
 // Create canvas
-let canvas = Canvas(width: 300, height: 300)
+let canvas = Canvas(width: 600, height: 600)
 
 // No borders
 canvas.drawShapesWithBorders = false
 
+//4 squares
+for x in stride(from: 50, through: 350, by: 300){
+for y in 0...1{
 // Get the initial colour
 let hue = Float(arc4random_uniform(360))
 
 // Draw the initial square
 canvas.fillColor = Color(hue: hue, saturation: 80, brightness: 90, alpha: 100)
-canvas.drawRectangle(bottomLeftX: 50, bottomLeftY: 50, width: 200, height: 200)
+canvas.drawRectangle(bottomLeftX: x, bottomLeftY: 50 + 300 * y + 200  * y, width: 200, height: 200)
 
 // Get the complementary colour
 var complement = hue + 180
@@ -56,12 +59,13 @@ if complement > 360 {
 let dimension = Int(arc4random_uniform(100)) + 50
 
 // Get the inset for the inner square
-let inset = 50 + (200 - dimension) / 2
+let inset = x + (200 * y - dimension) / 2
 
 // Draw the inner square
 canvas.fillColor = Color(hue: complement, saturation: 80, brightness: 90, alpha: 100)
 canvas.drawRectangle(bottomLeftX: inset, bottomLeftY: inset, width: dimension, height: dimension)
-
+    }
+}
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.

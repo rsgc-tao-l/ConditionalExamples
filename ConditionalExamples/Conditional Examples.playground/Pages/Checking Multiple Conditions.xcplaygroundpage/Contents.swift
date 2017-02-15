@@ -23,7 +23,7 @@ false || true      // true
 false || false     // false
 
 //: Here's another example:
-let speaks = "French"
+let speaks = "Meow"
 let disposition = "Cheerful"
 if speaks == "French" && disposition == "Cheerful" {
     print("Must be Mme. DeBlois")
